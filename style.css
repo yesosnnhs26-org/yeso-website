@@ -206,3 +206,13 @@ footer { padding: 26px 7%; text-align: center; color: rgba(244,255,249,.58); bor
 .officer-link:hover .officer-card {
   transform: translateY(-8px) scale(1.02);
 }
+
+.officer-photo {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(184, 247, 197, 0.3);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+  margin-bottom: 18px;
+}
