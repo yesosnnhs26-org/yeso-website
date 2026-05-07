@@ -35,7 +35,7 @@ if (floatingCta && contactSection) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           floatingCta.textContent = "Contact YES-O";
-          floatingCta.href = "mailto:sample@email.com";
+          floatingCta.href = "mailto:yesosnnhs26@gmail.com";
           floatingCta.classList.add("contact-mode");
         } else {
           floatingCta.textContent = "Get Involved";
