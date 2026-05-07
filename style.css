@@ -73,8 +73,15 @@ footer { padding: 26px 7%; text-align: center; color: rgba(244,255,249,.58); bor
 }
 
 .featured-officers {
-  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+  max-width: 1500px;
   margin: 0 auto;
+}
+
+.featured-officers .officer-card {
+  min-height: 240px;
 }
 
 .center-button {
