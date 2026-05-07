@@ -196,3 +196,13 @@ footer { padding: 26px 7%; text-align: center; color: rgba(244,255,249,.58); bor
     font-size: 0.9rem;
   }
 }
+
+.officer-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.officer-link:hover .officer-card {
+  transform: translateY(-8px) scale(1.02);
+}
