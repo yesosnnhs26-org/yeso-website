@@ -25,3 +25,29 @@ const revealObserver = new IntersectionObserver(
 );
 
 revealElements.forEach((element) => revealObserver.observe(element));
+
+const floatingCta = document.getElementById("floatingCta");
+const contactSection = document.getElementById("contact");
+
+if (floatingCta && contactSection) {
+  const contactObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          floatingCta.textContent = "Contact YES-O";
+          floatingCta.href = "mailto:sample@email.com";
+          floatingCta.classList.add("contact-mode");
+        } else {
+          floatingCta.textContent = "Get Involved";
+          floatingCta.href = "#contact";
+          floatingCta.classList.remove("contact-mode");
+        }
+      });
+    },
+    {
+      threshold: 0.45
+    }
+  );
+
+  contactObserver.observe(contactSection);
+}
