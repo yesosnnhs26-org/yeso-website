@@ -158,3 +158,41 @@ footer { padding: 26px 7%; text-align: center; color: rgba(244,255,249,.58); bor
   text-align: center;
   padding: 160px 7% 90px;
 }
+
+.floating-cta {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 50;
+  padding: 14px 24px;
+  border-radius: 999px;
+  background: rgba(184, 247, 197, 0.16);
+  color: #f4fff9;
+  border: 1px solid rgba(184, 247, 197, 0.35);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.32);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: 0.3s ease;
+}
+
+.floating-cta:hover {
+  transform: translateY(-5px);
+  background: #b8f7c5;
+  color: #06140f;
+}
+
+.floating-cta.contact-mode {
+  background: #b8f7c5;
+  color: #06140f;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+@media (max-width: 620px) {
+  .floating-cta {
+    right: 18px;
+    bottom: 18px;
+    padding: 12px 18px;
+    font-size: 0.9rem;
+  }
+}
