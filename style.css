@@ -344,3 +344,15 @@ footer { padding: 26px 7%; text-align: center; color: rgba(244,255,249,.58); bor
   opacity: 1;
   transform: scale(1);
 }
+
+.officer-badge {
+  width: 74px;
+  height: 74px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 18px;
+}
+
+.officer-expand-card:hover .officer-badge {
+  opacity: 0;
+}
