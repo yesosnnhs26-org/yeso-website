@@ -16,7 +16,7 @@
   <header class="site-header">
 
     <a href="#" class="brand">
-      <img src="https://i.imgur.com/p5LzGYK.jpeg" class="brand-logo-img">
+      
       <span>YES-O</span>
     </a>
 
@@ -24,9 +24,10 @@
 
     <nav class="nav-links">
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="officers.html">Officers</a>
-      <a href="#events">Events</a>
+      <a href="#projects">Our Focus</a>
+      <a href="#save-overview">Project SAVE!</a>
+      <a href="#partnerships">Partnerships</a>
+      <a href="#events">Updates</a>
       <a href="#contact">Contact</a>
     </nav>
 
@@ -61,20 +62,8 @@
 
       </div>
 
-      <div class="hero-card reveal">
-
-        <img src="https://i.imgur.com/p5LzGYK.jpeg" class="hero-logo">
-
-        <h2>
-          Innovating Today,<br>
-          Sustaining Tomorrow.
-        </h2>
-
-        <p>
-          Environmental action begins with awareness,
-          grows through unity, and becomes change through service.
-        </p>
-
+      <div class="hero-background" aria-hidden="true">
+        <img src="https://i.imgur.com/O1sYaMw.png" alt="" />
       </div>
 
     </section>
@@ -110,63 +99,97 @@
 
     </section>
 
-    <section id="projects" class="section">
-
-      <div class="section-heading centered reveal">
-
-        <p class="eyebrow">
-          Our Initiatives
-        </p>
-
-        <h2>
-          Projects and Programs
-        </h2>
-
+    <section class="impact-section" aria-label="YES-O impact">
+      <div class="impact-grid">
+        <article class="impact-item">
+          <p class="impact-number">700+</p>
+          <span class="impact-rule" aria-hidden="true"></span>
+          <p class="impact-description">kilograms of waste collected</p>
+        </article>
+        <article class="impact-item">
+          <p class="impact-number">50+</p>
+          <span class="impact-rule" aria-hidden="true"></span>
+          <p class="impact-description">volunteers taking action for the environment</p>
+        </article>
+        <article class="impact-item">
+          <p class="impact-number">30+</p>
+          <span class="impact-rule" aria-hidden="true"></span>
+          <p class="impact-description">trees planted and sustained</p>
+        </article>
       </div>
-
-      <div class="cards-grid">
-
-        <article class="project-card reveal">
-          <span>01</span>
-          <h3>Clean and Green Campaigns</h3>
-          <p>
-            Promoting cleanliness, discipline, and environmental responsibility
-            inside and outside the campus.
-          </p>
-        </article>
-
-        <article class="project-card reveal">
-          <span>02</span>
-          <h3>Tree-Growing Activities</h3>
-          <p>
-            Encouraging students to support climate action through planting,
-            nurturing, and sustaining trees.
-          </p>
-        </article>
-
-        <article class="project-card reveal">
-          <span>03</span>
-          <h3>Waste Management</h3>
-          <p>
-            Strengthening proper waste segregation and awareness
-            on reducing, reusing, and recycling materials.
-          </p>
-        </article>
-
-        <article class="project-card reveal">
-          <span>04</span>
-          <h3>Environmental Awareness</h3>
-          <p>
-            Creating campaigns and digital materials
-            that inspire students to care for the Earth.
-          </p>
-        </article>
-
-      </div>
-
     </section>
 
-    <section id="officers" class="section dark-panel">
+
+    <section id="projects" class="save-section">
+      <div class="save-showcase">
+        <div class="save-intro">
+          <p class="eyebrow">Our focus</p>
+          <h2>Project SAVE!</h2>
+          <p class="save-lede">An Environmental School Initiative Promoting Research</p>
+          <p class="save-summary">A year-round YES-O initiative joining student research, environmental learning, and practical action across San Nicolas National High School.</p>
+
+        </div>
+        <figure class="save-image">
+          <img id="save-focus-image" src="assets/research-project.jpg" alt="YES-O students presenting their projects at a regional learners convergence" />
+          <figcaption>Learning through action</figcaption>
+        </figure>
+        <div class="save-details">
+          <div class="save-tabs" role="tablist" aria-label="Project SAVE! components">
+            <button class="save-tab is-active" id="tab-research" data-image="assets/research-project.jpg" data-alt="YES-O students presenting their projects at a regional learners convergence" type="button" role="tab" aria-selected="true" aria-controls="panel-research">Research</button>
+            <button class="save-tab" id="tab-environment" data-image="https://i.imgur.com/X7SGJGl.jpeg" data-alt="Students taking part in an environmental activity" type="button" role="tab" aria-selected="false" aria-controls="panel-environment" tabindex="-1">Environment</button>
+          </div>
+          <div class="save-detail-mark" aria-hidden="true">SAVE!</div>
+          <div class="save-panels">
+            <div class="save-panel is-active" id="panel-research" role="tabpanel" aria-labelledby="tab-research" tabindex="0">
+              <h3>Research Initiative</h3>
+              <p>Student inquiry that turns environmental and community questions into evidence-based ideas.</p>
+              <ol class="save-pathway">
+                <li>Annual school research exhibit</li>
+                <li>Division-level research activities</li>
+                <li>National Science Quest</li>
+                <li>International opportunities</li>
+              </ol>
+            </div>
+            <div class="save-panel" id="panel-environment" role="tabpanel" aria-labelledby="tab-environment" tabindex="0" hidden>
+              <h3>Environmental Initiative</h3>
+              <p>Shared school and community action for cleaner spaces, less waste, and a greener campus.</p>
+              <ul class="save-programs">
+                <li><strong>Sci-Gaw Kalikasan</strong><span>Weekly school clean-up</span></li>
+                <li><strong>Padyak para sa Kalikasan</strong><span>Bicycle commuting</span></li>
+                <li><strong>Bring Your Own Baunan (BOB)</strong><span>Reusable containers and less waste</span></li>
+                <li><strong>More ways to care</strong><span>Recycling, clean-ups, gardening, tree planting, and environmental education</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="save-overview" class="save-overview">
+      <div class="save-overview-content">
+        <p class="eyebrow">Project SAVE!</p>
+        <h2>Research, learning, and action for a greener school community.</h2>
+        <p class="save-overview-lede">An Environmental School Initiative Promoting Research — a year-round YES-O program at San Nicolas National High School.</p>
+
+        <div class="save-overview-card">
+          <p class="overview-label">How the initiative works</p>
+          <article class="overview-item">
+            <h3>Research and academic growth</h3>
+            <p>Students present work at the annual school research exhibit, then pursue division-level activities, the National Science Quest, and international opportunities. Environmental and community concerns are encouraged as research themes.</p>
+          </article>
+          <article class="overview-item">
+            <h3>Environmental action</h3>
+            <p>Sci-Gaw Kalikasan leads weekly campus clean-ups. Padyak para sa Kalikasan encourages bicycle commuting, while Bring Your Own Baunan (BOB) promotes reusable food containers. Activities also include waste segregation, recycling, gardening, greening, tree planting, and community clean-ups.</p>
+          </article>
+          <article class="overview-item">
+            <h3>Students and community partners</h3>
+            <p>Open to all learners, with particular opportunities for Senior High School STEM and Junior High School STE students. YES-O works with the Science Department, school staff, MENRO San Nicolas, Accenture, families, local government, and community organizations.</p>
+          </article>
+          <p class="overview-goals"><strong>Shared goals</strong> · Quality education · Sustainable communities · Responsible consumption · Climate action · Life on land · Partnerships</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="core-officers" class="section dark-panel">
 
       <div class="section-heading centered reveal">
 
@@ -175,7 +198,7 @@
         </p>
 
         <h2>
-          Meet Our Core Officers
+          Meet the Core Officers
         </h2>
 
         <p class="muted">
@@ -264,14 +287,35 @@
 
       </div>
 
-      <div class="center-button reveal">
-        <a href="officers.html" class="btn primary">
-          View Full Officer List
-        </a>
+</section>
+
+    <section id="partnerships" class="section partnerships-section">
+      <div class="section-heading centered reveal">
+        <p class="eyebrow">Our partners</p>
+        <h2>Working together for a greener community</h2>
+        <p class="partnerships-intro">Project SAVE! is made stronger by the people and organizations who give their time, leadership, and support.</p>
       </div>
 
-    </section>
+      <div class="partnership-list">
+        <article class="partnership-card reveal">
+          <div class="partnership-copy">
+            <p class="partnership-label">Town and community engagement</p>
+            <h3>MENRO San Nicolas</h3>
+            <p>MENRO helps lead environmental activities beyond the campus, including community clean-up drives and tree-planting efforts with residents.</p>
+          </div>
+          <img src="https://i.imgur.com/xnQYlK7.jpeg" alt="MENRO San Nicolas supporting community environmental activities" />
+        </article>
 
+        <article class="partnership-card reveal">
+          <img src="https://i.imgur.com/8zk0Cp2.jpeg" alt="Accenture volunteers supporting environmental activities" />
+          <div class="partnership-copy">
+            <p class="partnership-label">Supplies and cleanup partnership</p>
+            <h3>Accenture</h3>
+            <p>Accenture supports trash-collection activities with funded supplies and joins YES-O in coastal cleanups, including the International Coastal Cleanup (ICC).</p>
+          </div>
+        </article>
+      </div>
+    </section>
     <section id="events" class="section">
 
       <div class="section-heading centered reveal">
@@ -318,31 +362,31 @@
     </section>
 
     <section id="contact" class="section contact-section">
-
-      <div class="contact-card reveal">
-
-        <p class="eyebrow">
-          Get Involved
-        </p>
-
-        <h2>
-          Be part of the movement.
-        </h2>
-
-        <p>
-          Join YES-O activities, support environmental campaigns,
-          and help build a cleaner, greener,
-          and more responsible school community.
-        </p>
-
-        <a href="mailto:yesosnnhs26@gmail.com" class="btn primary">
-          Contact YES-O
-        </a>
-
+      <div class="section-heading contact-heading">
+        <p class="eyebrow">Get Involved</p>
+        <h2>Ways to Explore With Us</h2>
       </div>
 
-    </section>
+      <div class="contact-options">
+        <article class="contact-card contact-email reveal">
+          <img class="contact-card-image" src="https://i.imgur.com/meNY2NE.jpeg" alt="YES-O email and contact information" />
+          <div class="contact-card-copy">
+            <h3>Get in touch with YES-O</h3>
+            <p>Join activities, support environmental campaigns, or ask how to take part in Project SAVE! at San Nicolas National High School.</p>
+            <a class="contact-action" href="mailto:yesosnnhs26@gmail.com">Contact YES-O <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
 
+        <a class="contact-card facebook-card reveal" href="https://www.facebook.com/profile.php?id=100087247285243" target="_blank" rel="noopener noreferrer">
+          <img class="contact-card-image" src="https://i.imgur.com/kIhQedD.jpeg" alt="YES-O Facebook page" />
+          <div class="contact-card-copy">
+            <h3>Follow YES-O</h3>
+            <p>Follow YES-O for updates on student-led environmental activities, school programs, and Project SAVE!</p>
+            <span class="contact-action">Visit our Facebook page <span aria-hidden="true">↗</span></span>
+          </div>
+        </a>
+      </div>
+    </section>
   </main>
 
   <footer>
