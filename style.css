@@ -458,6 +458,21 @@ footer { background: #071f16; color: rgba(255,255,255,.68); border-color: rgba(2
 @media (max-width: 950px) { .hero { grid-template-columns: 1fr; } .hero-image { min-height: 300px; aspect-ratio: 16/8; } }
 .brand-logo-img { display: none; }
 
+/* Official YES-O mark in the site header */
+.site-header .brand-logo-img {
+  display: block;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 auto;
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+@media (max-width: 620px) {
+  .site-header .brand-logo-img { width: 40px; height: 40px; }
+}
+
 /* SAVE! editorial focus feature */
 .btn, .floating-cta, .project-root, .project-branch, .initiative-list li, .about-panel, .timeline-item, .contact-card, .officer-card, .profile-wrapper, .info-card, .back-button, .shot, .feature__frame, .enter { border-radius: 0 !important; }
 .save-section { padding: 0; background: #fff; overflow: hidden; }
